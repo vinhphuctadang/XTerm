@@ -18,7 +18,7 @@ socket.close ()
 we can accomplish these tasks:
 1. Have kernel to fullfil some information:
   You should sent a Message (format shown above) comprising of:
-    ```C++
+    ```c#
     {
       "type" : "request"
       "function" : "kernel",
