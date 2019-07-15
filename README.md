@@ -93,6 +93,7 @@ we can accomplish these tasks:
       "success":"false",
       "result":"error_description"
     }
+    is returned
 ```
     From the time of successful subscription, the socket will be recieving messages having structure like this:
 ```
