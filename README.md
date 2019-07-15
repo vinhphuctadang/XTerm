@@ -18,6 +18,7 @@ socket.close ()
 we can accomplish these tasks:
 1. Have kernel to fullfil some information:
   You should sent a Message (format shown above) comprising of:
+    ```python
     {
       "type" : "request"
       "function" : "kernel",
@@ -25,27 +26,36 @@ we can accomplish these tasks:
       "variable" : "<any_variable>"
     }
     
+    ```
+    
   Response will have a form like:
+  ```
     {
       "type": "response"
       "success" : "true" // or "success":"false"
       "result": "<result_content>"
     }
+  ```
     
 2. Create a channel, from now on the connection (socket) is used for publishing, see MQTT for more information:
+```
     {
       "type" : "request"
       "function" : "kernel",
       "request" : "create"
       "channel" : "<channel_name>" 
     }
+```
   
     After the sending attempt, socket should recieve a message contain 
+    ```
     {
      "type":"response"
      "result":"<register_channel_name>", 
      "success":"true"
      }
+     
+     ```
      otherwise a message 
      ```
      {
@@ -58,6 +68,7 @@ we can accomplish these tasks:
      is returned
      
 3. Subscribe a channel:
+```
     {
       "type":"response"
       "type" : "request"
@@ -66,27 +77,32 @@ we can accomplish these tasks:
       "channel" : "<channel_name>" 
     }
     
+```
+    
     if succeed, the kernel-HNhu- should return a json message: 
+```
     {
       "type":"response"
       "success":"true",
       "channel":"<subscribed_channel_name>"
     }
-    
+```    
     else a message which formed
+```   
     {
       "type":"response"
       "success":"false",
       "result":"error_description"
     }
-    
+```
     From the time of successful subscription, the socket will be recieving messages having structure like this:
+```
     {
       "type":"noftify",
       "channel":"subscribed channel"
       
       ...      
     }
-    
+```
  4. Accepted function via socket:
   <to_be_continue>
