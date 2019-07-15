@@ -27,14 +27,14 @@ we can accomplish these tasks:
     
 ```
     
-  Response will have a form like:
-  ```
+    Response will have a form like:
+```
     {
       "type": "response"
       "success" : "true" // or "success":"false"
       "result": "<result_content>"
     }
-  ```
+```
     
 2. Create a channel, from now on the connection (socket) is used for publishing, see MQTT for more information:
 ```
@@ -47,22 +47,22 @@ we can accomplish these tasks:
 ```
   
     After the sending attempt, socket should recieve a message contain 
-    ```
+```
     {
      "type":"response"
      "result":"<register_channel_name>", 
      "success":"true"
      }
-     
-     ```
+   
+ ```
      otherwise a message 
-     ```
+ ```
      {
      "type":"response"
      "success": "false"
      "result":"<error_description>"
      } 
-     ```
+ ```
      
      is returned
      
