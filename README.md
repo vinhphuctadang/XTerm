@@ -5,8 +5,7 @@ A simple ChatServer (yet a panel) for sending and recieving JSON messages betwee
 
 In order to take advantage of the server, 
 
-First, start HNhu.exe (or start an x86 for 32 bit machine)
-Next, from any programming language (requires socket library supported):
+First, start HNhu.exe (or start an x86 for 32 bit machine). Next, from any programming language (requires socket library supported):
 ```
 socket = new Socket ('localhost', 16472) // default HNhu port is 16472
 // from now on we can send and recieve via the socket 
@@ -18,7 +17,7 @@ socket.close ()
 we can accomplish these tasks:
 1. Have kernel to fullfil some information:
   You should sent a Message (format shown above) comprising of:
-    ```c#
+```c++
     {
       "type" : "request"
       "function" : "kernel",
@@ -26,7 +25,7 @@ we can accomplish these tasks:
       "variable" : "<any_variable>"
     }
     
-    ```
+```
     
   Response will have a form like:
   ```
