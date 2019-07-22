@@ -15,7 +15,7 @@ socket = new Socket ('localhost', 16472) // default HNhu port is 16472
 socket.close ()
 ```
 we can accomplish these tasks:
-1. Have kernel to fullfil some information:
+1. Query some information of kernel:
   You should sent a Message (format shown above) comprising of:
 ```c++
     {
