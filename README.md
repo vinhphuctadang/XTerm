@@ -16,7 +16,7 @@ socket.close ()
 ```
 we can accomplish these tasks:
 1. Query some information of kernel:
-  You should sent a Message (format shown above) comprising of:
+  You should sent a Message (format shown below) comprising of:
 ```c++
     {
       "type" : "request"
