@@ -1,5 +1,6 @@
 # Overview:
 A simple ChatServer (yet a panel) for sending and recieving JSON messages between clients
+For full access, python 3.x is required
 
 # How to use ?
 
