@@ -6,9 +6,9 @@ For full access, python 3.x is required
 
 In order to take advantage of the server, 
 
-First, start HNhu.exe (or start an x86 for 32 bit machine). Next, from any programming language (requires socket library supported):
+First, start XTerm.exe (or start an x86 for 32 bit machine). Next, from any programming language (requires socket library supported):
 ```
-socket = new Socket ('localhost', 16472) // default HNhu port is 16472
+socket = new Socket ('localhost', 16472) // default XTerm port is 16472
 // from now on we can send and recieve via the socket 
 // but watch out
 // A message is consisting of 2 parts: first 4 bytes are for message size (in byte, denote n) and next n bytes represent the message content in json format
@@ -79,7 +79,7 @@ we can accomplish these tasks:
     
 ```
     
-    if succeed, the kernel-HNhu- should return a json message: 
+    if succeed, the kernel-XTerm- should return a json message: 
 ```
     {
       "type":"response"
