@@ -1,0 +1,1 @@
+{"lastWorkingDir":"E:\\CPP","macros":{"cmpr":"write COMPILING... && g++ --std=c++14 #1 -o run && write ------- #1 -------- && run < input.txt #2 #3 #4 #5 && write $lgreen \\nExecuted"},"startup":[],"vars":{"CORENO":"0.0.4","NAME":"PC","ROOT":"E:\\CPP\\HNhu\\","nhu":"%ROOT%nhu.exe"}}
